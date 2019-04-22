@@ -5,6 +5,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Tab3Page } from './tab3.page';
 
+import { YoutubeComponent } from './youtube/youtube.component'
+
 @NgModule({
   imports: [
     IonicModule,
@@ -12,6 +14,9 @@ import { Tab3Page } from './tab3.page';
     FormsModule,
     RouterModule.forChild([{ path: '', component: Tab3Page }])
   ],
-  declarations: [Tab3Page]
+  declarations: [
+    Tab3Page,
+    YoutubeComponent,
+  ]
 })
 export class Tab3PageModule {}
